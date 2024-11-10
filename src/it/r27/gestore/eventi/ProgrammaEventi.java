@@ -13,12 +13,10 @@ public class ProgrammaEventi {
         this.eventi = new ArrayList<>();
     }
 
-    // Aggiunge un evento
     public void aggiungiEvento(Evento evento) {
         eventi.add(evento);
     }
 
-    // Restituisce eventi in una certa data
     public List<Evento> getEventiPerData(LocalDate data) {
         List<Evento> eventiFiltrati = new ArrayList<>();
         for (Evento evento : eventi) {
@@ -29,17 +27,14 @@ public class ProgrammaEventi {
         return eventiFiltrati;
     }
 
-    // Restituisce la lista degli eventi
     public List<Evento> getEventi() {
         return eventi;
     }
 
-    // Restituisce il numero di eventi
     public int getNumeroEventi() {
         return eventi.size();
     }
 
-    // Svuota la lista di eventi
     public void svuotaEventi() {
         eventi.clear();
     }
